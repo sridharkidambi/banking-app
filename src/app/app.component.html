@@ -1,32 +1,33 @@
 
 <courses></courses>
 <mat-slider ></mat-slider>
-<!-- <div> -->
-<!-- <div (click)="OnsaveParent($event)">
+<div> 
+<div (click)="OnsaveParent($event)">
 <button class="btn btn-primary" [class.active]="isActive" [style.color] = "isActive ? 'orange': 'green' " (click)="Onsave($event)"  >Save</button>
-<button class="btn btn-primary" [class.active]="!isActive"  >Save</button> -->
+<button class="btn btn-primary" [class.active]="!isActive"  >Save</button>
 
 <!-- template variable  #name below --> 
-<!-- <input #name [value]="emailadd" (keyup.enter)="emailadd=$event.target.value;OnEnterMe(name.value)" /> -->
-<!-- <input [(ngModel)] = "emailadd" (keyup.enter)="OnEnterMe1($event)" />
+<input #name [value]="emailadd" (keyup.enter)="emailadd=$event.target.value;OnEnterMe(name.value)" /> -->
+<input [(ngModel)] = "emailadd" (keyup.enter)="OnEnterMe1($event)" />
 <br>
 {{text | summary:40 }} 
-</div>   -->
+</div>  
 
 <!-- <app-favourite [is-Fav]="post.isFavourite" (change)="OnFavouriteChanged($event)" >
     tesing ifit reflects there
 </app-favourite> -->
-<!-- <br>
-<b> app component post.isFavourite is now:</b> {{post.isFavourite}} -->
-
-<!-- <app-bootstrap-panel>
+<br>
+<b> app component post.isFavourite is now:</b> {{post.isFavourite}}
+<!-- <input type="text"  appInputFormat1 [format]="'uppercase'" > -->
+<input type="text"  [appInputFormat1]="'uppercase'" >
+<app-bootstrap-panel>
     <div class="heading">heading</div>
     
     <div class="body">
         <h2>SK body using ng-content</h2>
         <p>penning some lines here</p>
-    </div> -->
+    </div>
 
-    <!-- <ng-container class="heading">heading container</ng-container>
-    <ng-container class="body">body container</ng-container> -->
-<!-- </app-bootstrap-panel>```````````````````````````````````````````` -->
+    <ng-container class="heading">heading container</ng-container>
+    <ng-container class="body">body container</ng-container>
+</app-bootstrap-panel>

@@ -15,6 +15,7 @@ import { SelectDropDownModule } from 'ngx-select-dropdown'
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { NgMarqueeModule } from 'ng-marquee';
+import { InputFormatDirective } from './directives/input-format.directive';
 
 
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -26,7 +27,8 @@ import { NgMarqueeModule } from 'ng-marquee';
     AppComponent,
     CoursesComponent,
     FavouriteComponent,
-    BootstrapPanelComponent
+    BootstrapPanelComponent,
+    InputFormatDirective
     // NgbModule
   ],
   imports: [
