@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FavouriteComponent } from './favourite/favourite.component';
 import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
 import { ChartsModule } from 'ng2-charts';
@@ -16,6 +16,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { NgMarqueeModule } from 'ng-marquee';
 import { InputFormatDirective } from './directives/input-format.directive';
+import { ContactFormComponent } from './src/app/contact-form/contact-form.component';
+import { SignupFormComponent } from './src/app/signup-form/signup-form.component';
 
 
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -28,7 +30,9 @@ import { InputFormatDirective } from './directives/input-format.directive';
     CoursesComponent,
     FavouriteComponent,
     BootstrapPanelComponent,
-    InputFormatDirective
+    InputFormatDirective,
+    ContactFormComponent,
+    SignupFormComponent
     // NgbModule
   ],
   imports: [
@@ -40,7 +44,8 @@ import { InputFormatDirective } from './directives/input-format.directive';
     ChartsModule,
     SelectDropDownModule,
     HttpClientModule,
-    NgMarqueeModule
+    NgMarqueeModule,
+    ReactiveFormsModule
 
   ],
   providers: [
